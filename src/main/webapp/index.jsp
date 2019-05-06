@@ -15,7 +15,7 @@
     <script type="text/javascript" src="/static/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
 </head>
 <body>
-<jsp:forward page="/emps"/>
+<jsp:forward page="WEB-INF/views/index.jsp"/>
 <h2>Hello World!</h2>
 <table class="table table-stripedr">
     <tr>
