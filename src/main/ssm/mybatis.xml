@@ -15,6 +15,7 @@
     <!-- 注册pagehelper,注意位置，在别名后-->
     <plugins>
         <plugin interceptor="com.github.pagehelper.PageInterceptor">
+            <!--调整分页合理化-->
             <property name="reasonable" value="true" />
         </plugin>
     </plugins>

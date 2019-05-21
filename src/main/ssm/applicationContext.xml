@@ -14,7 +14,7 @@
        http://www.springframework.org/schema/tx
        http://www.springframework.org/schema/tx/spring-tx.xsd">
     <!--spring 的配置文件-->
-    <!--数据源，事务控制，。。。-->
+    <!--数据源，事务控制-->
     <!--spring不需要扫描控制器-->
     <context:component-scan base-package="crud">
         <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>

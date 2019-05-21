@@ -1,7 +1,7 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html; charset=UTF-8" language="java" %>
 <html>
-<title>ssm_test1</title>
+<title>欢迎使用企业级电商后台管理系统</title>
 <head>
     <title>员工列表</title>
     <%
@@ -13,25 +13,19 @@
     <%--引入jquery--%>
     <script type="text/javascript" src="/static/js/jquery-3.3.1.min.js" ></script>
     <script type="text/javascript" src="/static/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+    <script type="text/javascript" src="/static/js/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script type="text/javascript" src="/static/js/vue.js"/>
+    <script type="text/javascript">
+        var app = new Vue({
+           el:"#app",
+           data:{
+               message:"Hello Vue"
+           }
+        });
+    </script>
 </head>
 <body>
-<jsp:forward page="WEB-INF/views/index.jsp"/>
-<h2>Hello World!</h2>
-<table class="table table-stripedr">
-    <tr>
-        <td>#</td>
-        <td>姓名</td>
-        <td>性别</td>
-        <td>邮箱</td>
-        <td>部门</td>
-    </tr>
-    <tr>
-        <td>#</td>
-        <td>姓名</td>
-        <td>性别</td>
-        <td>邮箱</td>
-        <td>部门</td>
-    </tr>
-</table>
+<jsp:forward page="WEB-INF/views/vuetest.html"/>
 </body>
 </html>

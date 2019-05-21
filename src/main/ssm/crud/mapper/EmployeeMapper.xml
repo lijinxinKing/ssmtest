@@ -113,6 +113,13 @@
     </if>
   </select>
 
+  <select id="selectByEmpName" parameterType="crud.bean.Employee" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from tbl_emp
+    where emp_name = #{empName}
+  </select>
+
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />

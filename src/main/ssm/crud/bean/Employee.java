@@ -1,5 +1,7 @@
 package crud.bean;
 
+import org.hibernate.validator.constraints.Email;
+
 public class Employee {
     private Integer empId;
 
@@ -10,23 +12,25 @@ public class Employee {
         return department;
     }
 
-    public void setDepartment(Department department) {
-        this.department = department;
-    }
-
     @Override
     public String toString() {
         return "Employee{" +
                 "empId=" + empId +
                 ", empName='" + empName + '\'' +
+                ", department=" + department +
                 ", gender='" + gender + '\'' +
                 ", email='" + email + '\'' +
                 ", dId=" + dId +
                 '}';
     }
 
+    public void setDepartment(Department department) {
+        this.department = department;
+    }
+
     private String gender;
 
+    @Email
     private String email;
 
     private Integer dId;
