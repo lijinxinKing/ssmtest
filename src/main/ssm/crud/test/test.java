@@ -36,7 +36,7 @@ public class test {
         /*departmentMapper.insertSelective(new Department(null,"开发部"));
         departmentMapper.insertSelective(new Department(null,"测试部"));
         departmentMapper.insertSelective(new Department(null,"管理部"));*/
-        // 插入员工
+        //
         EmployeeMapper mapper = sqlSession.getMapper(EmployeeMapper.class);
         for (int i = 0; i < 10 ; i++) {
             String uid = UUID.randomUUID().toString().substring(0,5) + i;

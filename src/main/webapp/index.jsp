@@ -26,6 +26,6 @@
     </script>
 </head>
 <body>
-<jsp:forward page="WEB-INF/views/vuetest.html"/>
+<jsp:forward page="WEB-INF/views/index.jsp"/>
 </body>
 </html>

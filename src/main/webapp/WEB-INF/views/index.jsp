@@ -336,7 +336,24 @@
                     <td>操作</td>
                 </tr>
                 </thead>
-                <tbody></tbody>
+                <tbody>
+                <c:forEach items="${empList}" var="employee">
+                   <tr>
+                    <td>${employee.empId}</td>
+                    <td>${employee.empName}</td>
+                    <td>${employee.gender=="M"?"男":"女"}</td>
+                    <td>${employee.email}</td>
+                    <td>${employee.department.deptName}</td>
+                    <td>
+                        <button type="button" class="btn btn-danger btn-sm" href="#">
+                            <span class="glyphicon glyphicon-trash" aria-hidden="true">删除</span></button>
+                        <button type="button" class="btn btn-primary btn-sm" href="#">
+                            <span class="glyphicon glyphicon-pencil" aria-hidden="true">编辑</span></button>
+                    </td>
+                    </tr>
+                </c:forEach>
+
+                </tbody>
             </table>
         </div>
     </div>
